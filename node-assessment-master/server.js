@@ -112,7 +112,11 @@ app.post('/api/users/language/:userId', function(req, res, next) {
 	res.status(200).send(result);
   console.log('result for 7', result);
   
-})
+});
+
+
+
+
 
 
 
