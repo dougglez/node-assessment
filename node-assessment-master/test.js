@@ -97,6 +97,7 @@ test('Change a users language', async t => {
     .get('/api/users/' + id)
 
   t.is(req.status, 200);
+  
   t.truthy(req.body.language);
   t.is(req.body.language, 'french');
 
@@ -110,6 +111,7 @@ test('Change a users language', async t => {
     .get('/api/users/' + id)
 
   t.is(req.status, 200);
+  
   t.truthy(req.body.language);
   t.is(req.body.language, 'klingon');
 })
